@@ -1,0 +1,67 @@
+<html>
+    <head> <title>${name}</title> 
+        <link href="style.css" rel="stylesheet"><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+    </head>
+    <body> 
+        <button class="back">
+        <a href='index.html'>Back to home</a>
+    </button>
+    <div class="container">
+        <img  id="img" src="" alt="">
+         <div class="details">
+            <h3 id="h3" ></h3>
+            <p id="brand" ></p>
+            <p id="rating" ></p>
+            <p id="para"></p> 
+            <button>Add to card</button>
+         </div> 
+        </div>
+
+
+
+
+
+
+
+
+        
+        <script>
+
+
+                var a = [
+        { name: 'High-back-bench', pic: 'https://course-api.com/images/store/product-1.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '9.0' },
+        { name: 'bench', pic: 'https://course-api.com/images/store/product-2.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '5.5' },
+        { name: 'chair', pic: 'https://course-api.com/images/store/product-3.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '6.5' },
+        { name: 'Wooden table', pic: 'https://course-api.com/images/store/product-4.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '6.0' },
+        { name: 'Dinning Table', pic: 'https://course-api.com/images/store/product-5.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '4.5' },
+        { name: 'Sofa set', pic: 'https://course-api.com/images/store/product-6.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '4.8' },
+        { name: 'Book Self', pic: 'https://course-api.com/images/store/product-7.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '5.7' },
+        { name: 'Emperior wed', pic: 'https://course-api.com/images/store/product-8.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '6.5' },
+        { name: 'Utopia sofa', pic: 'https://course-api.com/images/store/product-9.jpeg', brand: 'caresa', para: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa, eos maxime voluptatibus ipsum veniam rem nisi ut accusamus id animi, f', rating: '8.0' },
+    ]
+
+
+    let n = localStorage.getItem('index')
+      console.log(n);
+
+    let img=document.getElementById('img').src = a[parseInt(n)].pic
+    let brand=document.getElementById('brand').innerText  = a[parseInt(n)].brand
+    let para =document.getElementById('para').innerText= a[parseInt(n)].para
+    let name = document.getElementById('h3').innerText =a[parseInt(n)].name
+    let rating=document.getElementById('rating').innerText = a[parseInt(n)].rating
+
+
+
+        </script>
+    </body>
+    </html
